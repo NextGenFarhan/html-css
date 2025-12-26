@@ -1,8 +1,10 @@
-# HTML (HyperText Markup Language)
+# History of HTML & CSS
+
+## HTML (HyperText Markup Language)
 It was created by **Tim Berners-Lee** in 1991.  
 He invented it as a way to structure and link documents on the World Wide Web.
 
-# CSS (Cascading Style Sheets)
+## CSS (Cascading Style Sheets)
 It was developed by **Håkon Wium Lie** in 1994, while working with **Tim Berners-Lee** at _CERN_,  
 to separate content from design and styling.
 
@@ -30,5 +32,5 @@ It is designed to help learners build a strong foundation and improve their web 
 
 ## Resources
 - Responsive Web Design Course
-- Youtube videos of (@codeWithHarry)
+- Youtube videos by (@codeWithHarry)
 - ChatGPT (for guidance and explanations)
