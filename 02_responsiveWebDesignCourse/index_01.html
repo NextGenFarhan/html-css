@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<body>
+    <style>
+        /* Element selector */
+        div {
+            background-color: red;
+        }
+        /* Class selector  */
+        .aquamarine {
+            background-color: aquamarine;
+         }
+        /* ID selector  */
+        #green {
+            background-color: green;
+         }
+        /* Child selector */   /*div ke andar direct p*/
+        div > p {
+            color: white;
+            background-color: black;
+        }
+        /* Descendent selector */  /*Div ke andar kahi bhi p rahega toh chalega*/
+        div p {
+            color: blue;
+            background-color: black;
+        }
+        /* Universal selctor */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+     <div class="red">
+        I am div 
+        <p>Yes I am the child of this div </p>
+    </div>
+     <div class="aquamarine">I am also div</div>
+     <div class="third" id="green">I am the third div</div>
+</body>
+</html>

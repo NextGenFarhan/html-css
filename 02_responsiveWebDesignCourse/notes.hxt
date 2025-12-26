@@ -1,0 +1,115 @@
+# HTML & CSS Notes (Organized)
+
+## Typography Properties
+1. font-family → Text ka font set karne ke liye. (Google Fonts se import kar sakte ho, jaise: Poppins)
+2. font-style → italic / normal set karne ke liye.
+3. font-weight → boldness control karta hai (100–900).
+4. text-decoration → underline, overline, line-through add karne ke liye.
+5. line-height → do lines ke beech ki vertical spacing.
+6. text-transform → text ko UPPERCASE, lowercase, ya Capitalize me change karne ke liye.
+
+---
+
+## Overflow Handling
+1. overflow: hidden; → extra content chhup jata hai.
+2. overflow: scroll; → hamesha scrollbar show hota hai.
+3. overflow-x / overflow-y → sirf horizontal ya vertical overflow control.
+   - Example: overflow: hidden auto; (x hidden, y auto-scroll).
+4. white-space: nowrap; → content ek hi line me force hoga.
+5. text-overflow: ellipsis; → text cut hoke "..." show karega.
+
+---
+
+## CSS Units
+1. px → fixed pixel size.
+2. vw → viewport width ka percentage.
+3. vh → viewport height ka percentage.
+4. em → parent element ke font-size ke relative (2em = double size).
+5. rem → root element ke font-size ke relative.
+6. vmin → viewport ki min(width, height).
+7. vmax → viewport ki max(width, height).
+
+---
+
+## Shadows & Outline
+Box Shadow Syntax:
+box-shadow: h-offset v-offset blur spread color inset;
+
+- h-offset = left-right move
+- v-offset = up-down move
+- blur = kitna blur hoga
+- spread = size expand/shrink
+- color = shadow ka rang
+- inset = andar shadow lagta hai
+
+Outline Syntax:
+outline: width style color;
+
+- width = outline ki thickness
+- style = solid, dotted, dashed
+- color = outline ka color
+
+---
+
+## Positioning in CSS
+1. static → Default position.
+2. relative → element apni original jagah ke relative move hota hai.
+3. absolute → nearest positioned ancestor ke relative place hota hai.
+4. fixed → viewport ke respect me fixed hota hai (scroll karne par bhi same jagah).
+5. sticky → ek jagah chipak jata hai jab tak scroll hota hai.
+
+Extra:
+- top, bottom, left, right → positioning ke liye.
+- z-index → stacking order control karta hai. Sirf positioned elements (relative/absolute/fixed/sticky) pe kaam karta hai.
+
+---
+
+## CSS Variables
+:root {
+  --main-color: blue;
+  --padding: 10px;
+}
+.box {
+  color: var(--main-color);
+  padding: var(--padding);
+}
+
+---
+
+## Media Queries
+Responsive design ke liye use hota hai.
+
+Syntax:
+@media not/only mediatype and (condition) {
+  /* CSS Code */
+}
+
+Examples:
+@media only screen and (max-width: 455px) {
+  body { background-color: blue; }
+  .box { flex-direction: column; }
+}
+
+@media screen and (orientation: landscape) {
+  body { background-color: green; }
+}
+
+---
+
+## Display Properties
+1. display: flex; → elements ko row/column me arrange karne ke liye.
+2. display: grid; → 2D layout ke liye.
+   Example:
+   grid-template-columns: 120px 100px;
+
+3. display: inline-block;
+   - Element line me rahta hai (inline ki tarah).
+   - Width/height set kar sakte ho (block ki tarah).
+   - Use case: chhoti boxes ko side-by-side rakhna.
+
+---
+
+## Suggested Button Colors
+- Gray: #6c757d
+- Green: #28a745
+- Blue: #007BFF

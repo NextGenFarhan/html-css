@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  /* Includes padding and border inside the element's total width/height */
+}
+
+html {
+  font-size: 16px;
+  /* Sets base font size: 1rem = 16px */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* Sets a clean and readable sans-serif font */
+}
+
+/* OUTER BOX */
+.label {
+  border: 2px solid black;
+  /* Black border around the label */
+  
+  width: 270px;
+  /* Fixed width for consistent sizing */
+  
+  margin: 20px auto;
+  /* 20px top/bottom margin; auto left/right centers the label */
+  
+  padding: 0 7px;
+  /* Horizontal padding (left/right) of 7px, no top/bottom padding */
+}
+
+/* HEADER */
+header h1 {
+  text-align: center;
+  /* Centers the Nutrition Facts heading */
+  
+  margin: -4px 0;
+  /* Negative top margin to pull header up slightly */
+  
+  letter-spacing: 0.15px;
+  /* Adds slight spacing between letters for readability */
+}
+
+/* TEXT BLOCKS */
+p {
+  margin: 0;
+  /* Removes default margin */
+
+  display: flex;
+  /* Flex container: places child elements (like name & value) in a row */
+
+  justify-content: space-between;
+  /* Pushes first and last elements to opposite sides */
+}
+
+/* HORIZONTAL DIVIDERS */
+.divider {
+  border-bottom: 1px solid #888989;
+  /* Grey bottom border for separating sections */
+  
+  margin: 2px 0;
+  /* 2px space above and below the line */
+}
+
+/* BOLD TEXT */
+.bold {
+  font-weight: 800;
+  /* Heavy bold text */
+}
+
+/* THICK BLACK LINES */
+.large {
+  height: 10px;
+  /* Makes the black bar 10px tall */
+}
+
+.large, .medium {
+  background-color: black;
+  /* Solid black bars for emphasis */
+
+  border: 0;
+  /* Removes default border */
+}
+
+.medium {
+  height: 5px;
+  /* Slightly thinner black bar */
+}
+
+/* SMALL TEXT */
+.small-text {
+  font-size: 0.85rem;
+  /* Slightly smaller than base font size (1rem = 16px) = ~13.6px */
+}
+
+/* CALORIES SECTION */
+.calories-info {
+  display: flex;
+  /* Places content side by side */
+
+  justify-content: space-between;
+  /* Pushes h2 and span to edges */
+
+  align-items: flex-end;
+  /* Aligns both items to bottom of container */
+}
+
+.calories-info h2 {
+  margin: 0;
+  /* Removes default space */
+}
+
+.left-container p {
+  margin: -5px -2px;
+  /* Negative margins to tighten spacing */
+  
+  font-size: 2em;
+  /* Doubles base font size (2 × 16px = 32px) */
+
+  font-weight: 700;
+  /* Bold text */
+}
+
+.calories-info span {
+  margin: -7px -2px;
+  /* Adjusts spacing tightly around the number */
+
+  font-size: 2.4em;
+  /* 2.4 × 16px = 38.4px, very large number */
+
+  font-weight: 700;
+  /* Bold text */
+}
+
+/* ALIGN RIGHT */
+.right {
+  justify-content: flex-end;
+  /* Pushes content to the right */
+}
+
+/* MARGINS FOR INDENTATION */
+.indent {
+  margin-left: 1em;
+  /* Indents text by 1 "M" width (usually 16px) */
+}
+
+.double-indent {
+  margin-left: 2em;
+  /* Indents text by 2 "M" widths */
+}
+
+/* CONDITIONAL DIVIDERS */
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+  /* Adds grey line unless class is 'no-divider' */
+}
+
+/* FOOTNOTE */
+.note {
+  font-size: 0.6rem;
+  /* Very small font: 0.6 × 16px = 9.6px */
+  
+  margin: 5px 0;
+  /* Space above/below */
+  
+  padding: 0 8px;
+  /* Horizontal padding inside footnote */
+
+  text-indent: -8px;
+  /* Pulls the first line 8px to the left, aligning text nicely */
+}

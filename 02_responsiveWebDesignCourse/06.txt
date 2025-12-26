@@ -1,0 +1,99 @@
+.canvas {
+  width: 500px;
+  /* Fixed width of the canvas area */
+
+  height: 600px;
+  /* Fixed height of the canvas */
+
+  background-color: #4d0f00;
+  /* Dark reddish background color */
+
+  overflow: hidden;
+  /* Anything overflowing the box is hidden */
+
+  filter: blur(2px);
+  /* Applies a blur effect of 2px to the whole canvas */
+}
+
+.frame {
+  border: 50px solid black;
+  /* Creates a thick black border of 50px on all sides */
+
+  width: 500px;
+  /* Content width is same as canvas width */
+
+  padding: 50px;
+  /* Space of 50px inside the frame */
+
+  margin: 20px auto;
+  /* Adds 20px space above and below; horizontally centers the frame */
+}
+
+.one {
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  /* Yellowish-orange background */
+
+  margin: 20px auto;
+  /* Adds vertical spacing; centers horizontally */
+
+  box-shadow: 0 0 3px 3px #efb762;
+  /* Glowing effect around the box: x-offset, y-offset, blur-radius, spread-radius, color */
+
+  border-radius: 9px;
+  /* Smooth curved corners (9px radius) */
+
+  transform: rotate(-0.6deg);
+  /* Slight counter-clockwise rotation of element */
+}
+
+.two {
+  width: 475px;
+  height: 200px;
+  background-color: #8f0401;
+  /* Dark red background */
+
+  margin: 0 auto 20px;
+  /* No top margin, 20px bottom, horizontally centered */
+
+  box-shadow: 0 0 3px 3px #8f0401;
+  /* Similar glowing effect like `.one` */
+
+  border-radius: 8px 10px;
+  /* Top-left & bottom-right radius: 8px; Top-right & bottom-left: 10px */
+
+  transform: rotate(0.4deg);
+  /* Slight clockwise rotation */
+}
+
+.one, .two {
+  filter: blur(1px);
+  /* Both get a slight blur of 1px */
+}
+
+.three {
+  width: 91%;
+  /* 91% of parent’s width — responsive */
+
+  height: 28%;
+  /* 28% of parent’s height */
+
+  background-color: #b20403;
+  /* Bright red color */
+
+  margin: auto;
+  /* Centers the element both horizontally and vertically (block-level) */
+
+  filter: blur(2px);
+  /* Stronger blur effect */
+
+  box-shadow: 0 0 5px 5px #b20403;
+  /* Glowing blur shadow */
+
+  border-radius: 30px 25px 60px 12px;
+  /* Different corner radii in clockwise order: TL, TR, BR, BL */
+
+  transform: rotate(-0.2deg);
+  /* Slight rotation counter-clockwise */
+}

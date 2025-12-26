@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                   <h1>REGISTRATION FORM.</h1>                   
+    <!-- FORM TAG  -->
+        <form
+        action="/action.php">
+        <input type = "text" placeholder="username ">
+        <br>
+        <br>
+        <input type = "password" placeholder="password ">
+        <br>
+                                <!--label-->
+                            <p><h3>SELECT YOUR CLASS</h3></p>
+        <label for="101">                                                          <!--abhi class XI pe click karunga toh hoga.--> 
+        <input type ="radio" value="class XI" name="class" id="101">class XI.
+        </label> 
+        <label for="102">
+        <input type ="radio" value="class XII" name="class" id="102">class XII.
+        </label>
+        
+                            <p><h3>SELECT YOUR SUBJECT</h3></p>
+        <label for="math">
+            <input type="checkbox" value="math" name="subject" id="101">math                         <!--checkbox:can select more than one option. -->
+        </label>
+        <br>
+        <label for="phy">
+            <input type="checkbox" value="phy" name="subject" id="102">phy
+        </label>
+        <br>
+        <label for="chem">
+            <input type="checkbox" value="chem" name="subject" id="103">chem
+        </label>
+        <br>
+        <label for="bio">
+            <input type="checkbox" value="bio" name="subject" id="104">bio
+        </label>
+        <br>
+        <label for="C.S.">
+            <input type="checkbox" value="C.S." name="subject" id="104">C.S.
+        </label>
+        <br>
+        <br>
+    <select name="city">
+        <option value="Delhi">Delhi</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+    </select>
+    <br>
+    <br>
+    <textarea name="feedback" id="101" placeholder="please enter your feedback."></textarea>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="05_project.css">
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <div>
+    <form id="first-form">
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required />
+        <label for="age">Age(optional)</label>
+        <input type="number" id="age" name="age" placeholder="Age" required />
+        <label for="info">Which option best describes your current role?</label>
+        <input type="text" id="info" name="bata" placeholder="Select current role" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you recommend this for to your friend?</legend>
+        <label for="one" class="option">Definitely
+          <input id="one" type="radio" name="recommend" required />
+        </label>
+        <label for="two" class="option">Maybe
+          <input id="two" type="radio" name="recommend" required />
+        </label>
+        <label for="three" class="option">Not sure
+          <input id="three" type="radio" name="recommend" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="feature">
+          What is your favorite feature of this page?
+            <div class="option">
+          <select id="feature" name="feature">
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+          </select>
+
+            </div>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What would you like to see improved? (Check all that apply)
+          <div class="feature">
+            <label for="first">Front-end Projects</label>
+            <input type="checkbox" id="first" name="improved" checked />
+          </div>
+          <div class="feature">
+            <label for="second">Back-end Projects</label>
+            <input type="checkbox" id="second" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="third">Data Visualization</label>
+            <input type="checkbox" id="third" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="forth">Challenges</label>
+            <input type="checkbox" id="forth" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="fifth">Open Source Community</label>
+            <input type="checkbox" id="fifth" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="sixth">Gitter help rooms</label>
+            <input type="checkbox" id="sixth" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="seventh">Videos</label>
+            <input type="checkbox" id="seventh" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="eigth">City Meetups</label>
+            <input type="checkbox" id="eigth" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="ninth">Wiki</label>
+            <input type="checkbox" id="ninth" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="tenth">Forum</label>
+            <input type="checkbox" id="tenth" name="improved" />
+          </div>
+          <div class="feature">
+            <label for="eleventh">Additional Courses</label>
+            <input type="checkbox" id="eleventh" name="improved" />
+          </div>
+        </legend>
+      </fieldset>
+
+      <fieldset>
+        <label for="bio" class="textarea" >Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comments here.."></textarea>
+        </label>
+      </fieldset>
+
+      <div class="button">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

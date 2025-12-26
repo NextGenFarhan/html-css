@@ -1,0 +1,60 @@
+h1 {
+  text-align: center; /* Centers the heading horizontally */
+}
+
+.container {
+  background-color: rgb(255, 255, 255); /* Sets background to white using RGB */
+  padding: 10px 0; /* 10px padding on top & bottom, 0 on left & right */
+}
+
+.marker {
+  width: 200px; /* Sets marker width to 200 pixels */
+  height: 25px; /* Sets marker height to 25 pixels */
+  margin: 10px auto; /* 10px top & bottom margin; auto for horizontal centering */
+}
+
+.cap {
+  width: 60px; /* Width of the cap section */
+  height: 25px; /* Height matches marker height */
+}
+
+.sleeve {
+  width: 110px; /* Width of sleeve section */
+  height: 25px; /* Same height */
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+  border-left: 10px double rgba(0, 0, 0, 0.75); /* Double-line border on the left with dark gray color */
+}
+
+.cap, .sleeve {
+  display: inline-block; /* Allows both elements to sit side by side */
+}
+
+/* RED MARKER STYLE */
+.red {
+  background: linear-gradient(
+    rgb(122, 74, 14),     /* Top color */
+    rgb(245, 62, 113),    /* Middle color */
+    rgb(162, 27, 27)      /* Bottom color */
+  );
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8); /* Glowing shadow effect around the box */
+}
+
+/* GREEN MARKER STYLE */
+.green {
+  background: linear-gradient(
+    #55680D,   /* Top: dark olive */
+    #71F53E,   /* Middle: neon green */
+    #116C31    /* Bottom: dark green */
+  );
+  box-shadow: 0 0 20px 0 #3B7E20CC; /* Glowing green box-shadow */
+}
+
+/* BLUE MARKER STYLE */
+.blue {
+  background: linear-gradient(
+    hsl(186, 76%, 16%),   /* Top using HSL color (dark teal) */
+    hsl(223, 90%, 60%),   /* Middle: bright blue */
+    hsl(240, 56%, 42%)    /* Bottom: darker navy */
+  );
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8); /* Blue shadow using HSLA (alpha for transparency) */
+}

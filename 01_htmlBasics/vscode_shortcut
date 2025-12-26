@@ -1,0 +1,24 @@
+toggle screen cast mode
+
+command pallete -> multiple multi cursor
+
+alt+shift+down arrow key toh replicate hoga
+
+h1+.+enter == [ <h1 class=""></h1> ]
+
+h1>ul>li5>+enter == h1 ke andar ul uske andar li 
+
+h1+.>ul+.>li+.> == subke pass class aajayea 
+
+To change the whole word ( right click + change all occurance )
+
+
+
+
+ TO OPEN INSPECT: “Inspect” or press F12.
+ CTRL+D = line repeat hogi..
+ html 
+ 1. div.container = div banega with class container
+ 2. div#container = div banega uske andar id container
+ 3. div>ul>li>    = ye sub ek ke andar ek ban jaayenge
+ 4. div>ul>li*5>  = same as 3 lekin 5 li khulenge

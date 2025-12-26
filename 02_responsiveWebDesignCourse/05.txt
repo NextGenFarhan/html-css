@@ -1,0 +1,78 @@
+body {
+  background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg); 
+  /* Sets a background image using a URL */
+  
+  font-family: sans-serif; 
+  /* Applies a clean, modern font */
+
+  padding: 20px; 
+  /* Adds 20px space inside the body on all sides */
+
+  text-align: center; 
+  /* Centers all text inside the body */
+}
+
+form {
+  width: 60vw; 
+  /* Form takes up 60% of the viewport width */
+
+  max-width: 500px; 
+  /* Maximum width will not go beyond 500px */
+
+  min-width: 300px; 
+  /* Form will not shrink below 300px width */
+
+  margin: 0 auto; 
+  /* Centers the form horizontally */
+
+  padding-bottom: 2em; 
+  /* Adds space (2x font size) at the bottom */
+
+  background-color: #0a0a23; 
+  /* Dark navy background for the form */
+
+  border: none; 
+  /* Removes any default border */
+
+  padding: 1rem 0; 
+  /* Adds 1rem padding to top and bottom, none on sides */
+
+  margin-bottom: 1rem; 
+  /* Adds space below the form (for layout) */
+}
+
+input, textarea {
+  background-color: #ffffff; 
+  /* Sets white background for input boxes */
+
+  border: 1px solid #ffffff; 
+  /* White border around inputs */
+}
+
+label {
+  display: block; 
+  /* Forces each label to be on its own line */
+
+  margin-top: 1rem; 
+  /* Adds space above each label */
+
+  text-align: left; 
+  /* Aligns label text to the left */
+}
+
+label, p, legend {
+  color: #ffffff; 
+  /* Makes all form text white for visibility on dark background */
+}
+
+input, textarea, select {
+  margin: 0.5em 0; 
+  /* Adds vertical margin of 0.5em (top & bottom), none on sides */
+
+  padding: 0.4em; 
+  /* Adds space inside the input field for better typing experience */
+
+  border-radius: 4px; 
+  /* Rounds the corners of input fields */
+}
+s

@@ -1,0 +1,95 @@
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Sets a background image using a URL */
+  font-family: sans-serif; /* Applies a simple, modern font without decorative strokes */
+  padding: 20px; /* Adds 20px space inside the body on all sides */
+}
+
+h1 {
+  font-size: 40px; /* Sets text size to 40 pixels */
+  margin-top: 0; /* Removes top space above h1 */
+  margin-bottom: 15px; /* Adds 15px space below h1 */
+}
+
+h2 {
+  font-size: 30px; /* Sets size for h2 headings to 30 pixels */
+}
+
+.established {
+  font-style: italic; /* Makes the font look slanted like handwriting */
+}
+
+h1, h2, p {
+  text-align: center; /* Centers text horizontally */
+}
+
+.menu {
+  width: 80%; /* Menu container takes up 80% of the screen width */
+  background-color: burlywood; /* Light brown color as background */
+  margin-left: auto;
+  margin-right: auto; /* Horizontally centers the box by making left and right margins auto */
+  padding: 20px; /* Adds space inside the menu box */
+  max-width: 500px; /* Menu won’t grow larger than 500px even on big screens */
+}
+
+img {
+  display: block; /* Makes image a block element (not inline) */
+  margin-left: auto;
+  margin-right: auto; /* Horizontally centers image */
+  margin-top: -25px; /* Moves image up by 25px (negative space) */
+}
+
+hr {
+  height: 2px; /* Height of horizontal line is 2 pixels */
+  background-color: brown; /* Line color is brown */
+  border-color: brown; /* Border color also brown to match */
+}
+
+.bottom-line {
+  margin-top: 25px; /* Adds 25px gap above the element */
+}
+
+h1, h2 {
+  font-family: Impact, serif; /* Uses bold 'Impact' font, fallback to 'serif' if not available */
+}
+
+.item p {
+  display: inline-block; /* Makes paragraphs behave like text boxes that can sit side by side */
+  margin-top: 5px;
+  margin-bottom: 5px; /* Adds 5px vertical spacing */
+  font-size: 18px; /* Sets text to 18 pixels */
+}
+
+.flavor, .dessert {
+  text-align: left; /* Aligns text to the left inside item box */
+  width: 75%; /* These items take up 75% of the row */
+}
+
+.price {
+  text-align: right; /* Aligns price to the right */
+  width: 25%; /* Takes 25% of the space so it aligns with flavor */
+}
+
+/* FOOTER SECTION */
+footer {
+  font-size: 14px; /* Footer text size is 14 pixels */
+}
+
+.address {
+  margin-bottom: 5px; /* Adds 5px space below address */
+}
+
+a {
+  color: black; /* Default color of links is black */
+}
+
+a:visited {
+  color: black; /* Even after clicking, link remains black */
+}
+
+a:hover {
+  color: brown; /* On mouse hover, link turns brown */
+}
+
+a:active {
+  color: brown; /* When clicked (active), color is brown */
+}

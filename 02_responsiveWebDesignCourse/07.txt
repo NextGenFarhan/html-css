@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  /* Includes padding and border inside the element's total width and height */
+}
+
+body {
+  margin: 0;
+  /* Removes default margin from body */
+
+  font-family: sans-serif;
+  /* Applies clean, modern sans-serif font to all text */
+
+  background: #f5f6f7;
+  /* Light greyish background for a neutral look */
+}
+
+.header {
+  text-align: center;
+  /* Centers the text inside header */
+
+  text-transform: uppercase;
+  /* Converts all text to capital letters */
+
+  padding: 32px;
+  /* Adds 32px spacing inside the header */
+
+  background-color: #0a0a23;
+  /* Very dark blue background for contrast */
+
+  color: #fff;
+  /* White text color */
+
+  border-bottom: 4px solid #fdb347;
+  /* 4px thick bottom border in orange-yellow color */
+}
+
+.gallery {
+  display: flex;
+  /* Enables Flexbox layout — elements now arrange in row/column */
+
+  flex-direction: row;
+  /* All images will align in a row by default */
+
+  flex-wrap: wrap;
+  /* Allows items to wrap to the next line if they don’t fit */
+
+  justify-content: center;
+  /* Centers the images horizontally */
+
+  align-items: center;
+  /* Aligns the images vertically in the middle of the container */
+
+  gap: 16px;
+  /* 16px space between items both horizontally and vertically */
+
+  max-width: 1400px;
+  /* Gallery won’t exceed 1400px in width even on big screens */
+
+  margin: 0 auto;
+  /* Vertically 0; Horizontally auto = center align */
+
+  padding: 20px 10px;
+  /* 20px top/bottom and 10px left/right padding */
+}
+
+.gallery img {
+  width: 100%;
+  /* Makes image take up full width of its container */
+
+  max-width: 350px;
+  /* But not more than 350px — ensures responsiveness */
+
+  height: 300px;
+  /* Fixed height of 300px for uniform image cards */
+
+  object-fit: cover;
+  /* Scales and crops the image to fully fill container while maintaining aspect ratio */
+
+  border-radius: 10px;
+  /* Rounds all four corners of the image by 10px */
+}
+
+.gallery::after {
+  content: "";
+  /* Adds an invisible element for layout balance */
+
+  width: 350px;
+  /* Same size as an image card — prevents layout imbalance in wrapping */
+}

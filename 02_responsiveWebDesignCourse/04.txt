@@ -1,0 +1,76 @@
+body {
+  width: 100%;                  /* Full width of the screen (100%) */
+  height: 100vh;                /* Full height of the viewport (100% of visible screen height) */
+  margin: 0;                    /* Removes default margin around the body */
+  background-color: #1b1b32;    /* Dark background using hex color */
+  color: #f5f6f7;               /* Light text color for readability */
+  font-family: Tahoma;          /* Sets text to Tahoma font */
+  font-size: 16px;              /* Base font size */
+}
+
+h1, p {
+  margin: 1em auto;             /* 1em margin top/bottom; auto left/right centers the text */
+  text-align: center;           /* Aligns the heading and paragraph text to the center */
+}
+
+form {
+  width: 60vw;                  /* 60% of the viewport width */
+  max-width: 500px;             /* Limits form width to 500px */
+  min-width: 300px;             /* Ensures form doesn't shrink below 300px */
+  margin: 0 auto;               /* Horizontally centers the form */
+  padding-bottom: 2em;          /* Adds space at the bottom of form */
+}
+
+fieldset {
+  border: none;                 /* Removes default border */
+  padding: 2rem 0;              /* 2rem top/bottom padding; 0 left/right */
+  border-bottom: 3px solid #3b3b4f; /* Adds thick dark gray bottom border */
+}
+
+fieldset:last-of-type {
+  border-bottom: none;         /* Removes border for the last fieldset */
+}
+
+label {
+  display: block;              /* Forces each label to appear on its own line */
+  margin: 0.5rem 0;            /* Top/bottom margin of 0.5rem */
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;          /* 10px top margin only */
+  width: 100%;                 /* Full width of the parent container */
+  min-height: 2em;             /* At least 2 lines tall (em = font-size-based unit) */
+}
+
+input, textarea {
+  background-color: #0a0a23;   /* Very dark background */
+  border: 1px solid #0a0a23;   /* Same color border, blends in */
+  color: #ffffff;              /* White text inside the input fields */
+}
+
+.inline {
+  width: unset;                /* Removes any forced width */
+  margin: 0 0.5em 0 0;         /* Right margin: 0.5em; others 0 */
+  vertical-align: middle;     /* Aligns inline element to middle of surrounding text */
+}
+
+input[type="submit"] {
+  display: block;              /* Takes up full line */
+  width: 60%;                  /* Button is 60% of the parent width */
+  margin: 1em auto;            /* Vertically spaced and horizontally centered */
+  height: 2em;                 /* Button height equals 2 lines of text */
+  font-size: 1.1rem;           /* Slightly larger than normal text */
+  background-color: #3b3b4f;   /* Dark gray button background */
+  border-color: white;         /* White border color */
+  min-width: 300px;            /* Won’t shrink below 300px */
+}
+
+input[type="file"] {
+  padding: 1px 2px;            /* Adds small padding to the file input */
+}
+
+a {
+  color: #dfdfe2;              /* Light gray link color */
+}

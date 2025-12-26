@@ -1,0 +1,208 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling if user prefers animations */
+  }
+}
+
+/* BASE STYLES */
+body {
+  background: #f5f6f7;
+  /* Light gray background for the whole page */
+
+  color: #1b1b32;
+  /* Dark blue-gray text color for readability */
+
+  font-family: Helvetica;
+  /* Clean, modern sans-serif font */
+
+  margin: 0;
+  /* Removes default browser margin */
+}
+
+/* HEADER SECTION */
+header {
+  width: 100%;
+  /* Full width of page */
+
+  height: 50px;
+  /* Fixed height for header bar */
+
+  background-color: #1b1b32;
+  /* Dark background color for header */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Flexbox to position logo and nav side by side */
+  
+  top: 0;
+  /* Optional - not used unless position is sticky/fixed */
+}
+
+#logo {
+  width: max(10rem, 18vw);
+  /* Responsive width: 10rem OR 18% of viewport, whichever is larger */
+  
+  background-color: #0a0a23;
+  /* Darker background for logo box */
+
+  aspect-ratio: 35 / 4;
+  /* Keeps the logo in a 35:4 width-to-height proportion */
+
+  padding: 0.4rem;
+  /* Padding inside logo container */
+}
+
+h1 {
+  color: #f1be32;
+  /* Bright yellow heading */
+
+  font-size: min(5vw, 1.2em);
+  /* Responsive font size: 5% of viewport width or 1.2em, whichever is smaller */
+
+  text-align: center;
+}
+
+/* NAVIGATION BAR */
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding-inline-start: 0;
+  /* Removes default padding of <ul> */
+
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  /* Light gray text */
+
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  /* Inverts color on hover for interactivity */
+  
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+  /* Link takes on color of parent and removes underline */
+}
+
+/* MAIN SECTION */
+main {
+  padding-top: 50px;
+  /* Space below fixed-height header */
+}
+
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+  /* Responsive, centered layout */
+}
+
+h1, h2 {
+  font-family: Verdana, Tahoma;
+  /* Override for headings: clean fonts */
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  /* Underline-like effect for section headers */
+
+  margin-top: 0px;
+  padding-top: 60px;
+  /* Spacing for anchor jump targets */
+}
+
+/* FORM BLOCKS */
+.info {
+  padding: 10px 0 0 5px;
+  /* Spacing inside info section */
+}
+
+.formrow {
+  margin-top: 30px;
+  padding: 0px 15px;
+}
+
+/* FORM ELEMENTS */
+input {
+  font-size: 1rem;
+  /* 1rem = 16px */
+}
+
+.info label,
+.info input {
+  display: inline-block;
+  /* Places them side by side */
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+.info label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+
+/* QUESTION BLOCKS */
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 1.375rem;
+  /* Slightly larger than normal text */
+}
+
+h3::before {
+  content: "Question #";
+  /* Auto-inserts text before every h3 heading */
+}
+
+/* QUESTION SECTION */
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
+.answers-list {
+  list-style: none;
+  padding: 0;
+  /* Removes bullets and padding from answer list */
+}
+
+/* BUTTON */
+button {
+  display: block;
+  margin: 40px auto;

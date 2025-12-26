@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+    <!-- target, nopener, noreferrer -->
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+    <!-- links -->
+     <!-- Absolute links: Ye woh links hote hain jo kisi external website ko point karte hain. -->
+      <!-- scheme://domain/path -->
+     <a href="https://www.theodinproject.com/about">About The Odin Project</a>
+     <!-- Relative links: Ye links hoti hain jo tumhari apni website ke dusre pages ko point karti hain. -->
+     <a href="html-boilerplate.html">About</a>
+
+
+     <!-- IMAGE -->
+      <img src="https://example.com/image.jpg">
+      <img src="./images/cat.jpg">
+      <img src="../images/cat.jpg" alt="IMAGE" height="310" weight="310">          
+      <!-- .. = ek folder upar jao (pages/ ke bahar) -->
+      <!-- images/dog.jpg = images folder me image -->
+</body>
+</html>
+
+<!-- 
+target="_blank": opens link in new tab.  
+rel="noopener": blocks new page from accessing original page (security). naye tab ko current page ka access nahi milega (security ke liye)  
+rel="noreferrer": hides referrer info (privacy) + also includes noopener. naye page ko yeh pata nahi chalega ki user kahaan se aaya (privacy ke liye) 
+-->
+<!-- ./ ka matlab hai: "current directory se start karo" -->
+
+
+<!-- eg.   Socho:   -->
+<!-- https://town.com = ek town (शहर) -->
+<!-- /museum = ek museum (ek section ya folder) -->
+<!-- movie_room.html = ek room (page) -->
+<!-- shops/coffee_shop.html = ek aur room -->
+<!-- Agar tum movie_room.html me ho aur tumhe coffee_shop.html jaana hai: -->
+<!-- Relative Link: ./shops/coffee_shop.html -->
+ <!-- By adding ./ you are specifying to your code that it should start looking for the file/directory relative to the current directory -->
+<!-- (Tum room ke andar se hi direction de rahe ho) -->
+<!-- Absolute Link: https://town.com/museum/shops/coffee_shop.html -->
+<!-- (Poora address diya hai) -->
